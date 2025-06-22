@@ -1,30 +1,121 @@
 <!DOCTYPE html>
-<h1>哈嘍邱誼榛</h1>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>生日快樂邱誼榛</title>
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      padding: 40px;
+      text-align: center;
+      background: linear-gradient(135deg, #FFDC5E 60%, #FFC107 100%);
+      color: #A67C52;
+    }
 
-<button onclick="typewrite()">Click Me!</button> <br><br>
+    h1 {
+      font-size: 2rem;
+      color: #D7263D;
+      text-shadow: 1px 1px 0 #FFC107, 2px 2px 0 #FFF2B2;
+    }
 
-<p id="words" style="white-space: pre-line"></p>
+    #words {
+      white-space: pre-line;
+      font-size: 1.1rem;
+      margin: 20px auto;
+      max-width: 600px;
+      color: #A67C52;
+      background: #FFF2B2;
+      border-radius: 10px;
+      padding: 16px;
+      border: 2px solid #FFC107;
+      box-shadow: 2px 2px 8px #FFDC5E44;
+    }
 
-<script>
-    var i = 0
+    .fun-button {
+      font-size: 1.4rem;
+      padding: 18px 36px;
+      margin: 14px;
+      border: none;
+      border-radius: 12px;
+      background-color: #D7263D;
+      color: #FFF2B2;
+      cursor: pointer;
+      box-shadow: 2px 2px 6px #A67C5244;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    .fun-button:hover {
+      background-color: #FFC107;
+      color: #A67C52;
+      transform: scale(1.05);
+      box-shadow: 2px 4px 12px #D7263D33;
+    }
+
+    .fun-button a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .back-home-btn {
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      background: #D7263D;
+      color: #FFF2B2;
+      border: none;
+      border-radius: 10px;
+      padding: 8px 18px;
+      font-size: 1rem;
+      box-shadow: 2px 2px 6px #A67C5244;
+      cursor: pointer;
+      font-weight: bold;
+      z-index: 10;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .back-home-btn:hover {
+      background: #FFC107;
+      color: #A67C52;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>哈嘍邱誼榛</h1>
+
+  <div style="margin-bottom: 24px;">
+    <em style="font-size: 1.2em; color: #A67C52;">“Sometimes the smallest things take up the most room in your heart.”<br>— Winnie the Pooh</em>
+  </div>
+
+  <button onclick="typewrite()">Click Me!</button> <br><br>
+
+  <p id="words"></p>
+
+  <script>
+    var i = 0;
     var txt = `邱誼榛 生日快樂！
-    今年想給你一個特殊一點的生日禮物 所以我花了一點時間寫了這個網頁給妳 
-    或許我無法送出最豪華最貴重的禮物 但我能希望這會是一個讓你難忘的回憶 嘿嘿
-    `
-    var speed = 100
+今年想給你一個特殊一點的生日禮物 所以我花了一點時間寫了這個網頁給妳 
+或許我無法送出最豪華最貴重的禮物 但我能希望這會是一個讓你難忘的回憶`;
+    var speed = 100;
 
     function typewrite() {
-        if (i < txt.length){
-            document.getElementById("words").innerHTML += txt.charAt(i)
-            i++;
-            setTimeout(typewrite, speed)
-        }
+      if (i < txt.length) {
+        document.getElementById("words").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typewrite, speed);
+      }
     }
-</script>
+  </script>
 
+  <p>底下這四個是我為我們特別準備的回憶大雜燴</p>
 
-<p>底下這四個是我為我們特別準備的回憶大雜燴</p>
-<button> <a href="pages/food.html">Food</a></button>
-<button> <a href="pages/moments.html">Moments</a></button>
-<button> <a href="pages/word.html">Wishes</a></button>
-<button> <a href="pages/secret.html">Secret</a></button>
+  <button class="fun-button"><a href="pages/food.html">🍜 Food</a></button>
+  <button class="fun-button"><a href="pages/moments.html">📸 Moments</a></button>
+  <button class="fun-button"><a href="pages/word.html">💌 Wishes</a></button>
+  <button class="fun-button"><a href="pages/secret.html">🔐 Secret</a></button>
+
+</body>
+</html>
