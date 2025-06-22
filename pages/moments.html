@@ -1,7 +1,226 @@
-<button> <a href="/index.html">Back to Home</a></button>
-
+<!DOCTYPE html>
+<html>
 <head>
-    <title>比比</title>
+  <meta charset="UTF-8">
+  <title>Moments</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .timeline {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: black;
+      transform: translateX(-50%);
+    }
+
+    .moment {
+      position: relative;
+      width: 50%;
+      padding: 30px 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .moment.left {
+      left: 0;
+      text-align: right;
+      align-items: flex-end;
+    }
+
+    .moment.right {
+      left: 50%;
+      text-align: left;
+      align-items: flex-start;
+    }
+
+    .dot {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      border-radius: 50%;
+      z-index: 2;
+      display: none;
+    }
+
+    .moment img {
+      width: 240px;
+      height: 130px;
+      object-fit: cover;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+
+    .moment p {
+      margin: 0;
+    }
+  </style>
 </head>
 
-<h1>hi</h1>
+<body>
+
+  <button><a href="/index.html">Back to Home</a></button>
+
+  <h2 style="text-align: center;">Our Moments</h2>
+
+  <div class="container">
+    <div class="timeline"></div>
+
+    <!-- Sample Moments (alternate left/right) -->
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_0366.PNG" style="height: 200px;">
+      <p>以前七年級很常一直傳的照片 <br>
+        溫蒂傳給我的 很可愛耶</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_0388.PNG">
+      <p>超級好笑的照片 我也忘了我<br>
+        為什麼有 超好笑 很像小小兵</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_0797.PNG" style="height: 400px;">
+      <p>兩人兩狗的視訊 一直在玩特效<br>
+            還差了一個腳毛派對 但不是這張</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_3025.JPG" style="height: 300px;">
+      <p>我們翹課去吃爭鮮 超熱的<br>
+    你記得嗎 還吃百香果冰</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_3965.JPG" style="height: 300px;">
+      <p>CAS showcase結束的時後<br>
+    你點了一堆金針菇沒吃完</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_4010.JPG">
+      <p>一起畢業 一起闖了六年的人<br>
+    以後可能會想你一點點</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_5443.JPG">
+      <p>去韓國韓村屋的時候<br>
+    我叫你幫我遮禿頭 實在太禿</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_6518.JPG">
+      <p>PA的時候 只記得我常常對<br>
+        你亂發脾氣 但我們都拿很高</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_6524.JPG" style="height: 200px;">
+      <p>我作詩的照片 一直被其他人笑<br>
+    累了需要一雙肩膀。</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_6592.PNG" style="height: 400px;">
+      <p>你幹嘛哭啦</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_6899.jpg" style="height: 200px;">
+      <p>好好笑我拿你的頭貼做圖<br>
+    跟群組裡面所有人說晚安</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_7405.JPG" style="height: 300px;">
+      <p>每次都在玩 畫畫 自拍的assembly<br>
+    之後沒辦法一起吐槽台上的人了</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_7733.jpeg" style="height: 200px;">
+      <p>一起去油車做志工<br>
+    小孩都很喜歡你欸 堂堂</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_7974.jpeg" style="height: 400px;">
+      <p>我們感情很好的時候 現在碰到你<br>
+    你就會瞪我 哼 cringe </p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_8069.JPG" style="height: 300px;">
+      <p>趁我尿尿拿我手機自拍 請問<br>
+    然後還要我誇很你很可愛。</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_9354.JPG" style="height: 400px;">
+      <p>Prom的兩顆糖 以後沒有了<br>
+    不能拍舔奶照了 嗚嗚</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_9461.jpeg" style="height: 300px;">
+      <p>比較年輕的兩顆糖 這張照片找好久<br>
+    我真可愛 但我瀏海是殺小 帥</p>
+    </div>
+
+    <div class="moment right">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_9536.JPG" style="height: 300px;">
+      <p>一起主持 沒聲音 喉嚨超級無敵痛<br>
+    那些小孩發了一堆書給你很可愛（他們）</p>
+    </div>
+
+    <div class="moment left">
+      <div class="dot"></div>
+      <img src="/pics/pics/IMG_9689.JPG" style="height: 200px;">
+      <p>我生日了 emo girl <br>
+    這次換你生日了 <br>
+    希望你喜歡我送的禮物 <br>
+從0開始做 好累</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
